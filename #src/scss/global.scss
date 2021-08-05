@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    position: relative; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.hide {
+    display: none;
+    
+}
+
+.hide_o {
+    opacity: 0;
+}
+
+.show {
+    display: block;
+}
+
+.show_o {
+    opacity: 1;
+}
+
+
+//Arrow toggler
+
+.up {
+    transform: rotate(180deg);
+}
+
+
+//Header toggler
+
+.transparent {
+    background-color: rgba(0,0,0, .9) !important;
+    
+}
+
+
+
