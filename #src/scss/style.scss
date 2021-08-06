@@ -396,7 +396,7 @@
                     width: 170px;
                     height: 170px;
                     border-radius: 50%;
-                    background-color: $gold;
+                    background-color: #ccc;
                     margin-bottom: 20px;
                 }
 
@@ -475,9 +475,6 @@
                     .teachers__slide_info {
                         width: 70%;
                         padding: 20px;
-                        background-color: #ccc;
-                        // border-top-left-radius: 10px;
-                        // border-bottom-left-radius: 10px;
                         border-radius: 10px;
                         
 
@@ -835,7 +832,7 @@
 
     &_wrapper {
         border-radius: 50%;
-        background-color: #fff;
+        background-color: transparent;
         border: 1px solid $gold;
         cursor: pointer;
         display: flex;
@@ -885,4 +882,116 @@
     }
 
     
+}
+
+.header__nav_burger_menu {
+    display: none;
+}
+
+
+
+
+
+//HABARLAR SAHYPA===================================================================
+
+.mod-header {
+    background-color: #000;
+    position: static !important;
+}
+
+.newscard {
+    
+    .newscard__inner {
+        padding: 100px 0;
+        .newscard__title {
+            display: block;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+
+        }
+        .newscard__info {
+            .newscard__info_date {
+                color: #ccc;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+        }
+        .newscard__content {
+            padding: 20px;
+            display: flex;
+            .newscard__text {
+                display: block;
+                padding-left: 20px;
+                font-size: 1.5em;
+                width: 60%;
+            }
+            .newscard__img {
+                width: 40%;
+                background-color: #ccc;
+                max-height: 500px;
+                
+
+            }
+        }
+    }
+}
+
+
+
+//SPORT CARELER SAHYPA==================================================================
+
+.sevents {
+    .sevents__inner {
+        padding: 100px 0;
+        .sevents__card {
+            .sevents__title {
+                font-size: 3.5em;
+                margin-bottom: 20px;
+            }
+            .sevents__content {
+                padding: 20px;
+                display: flex;
+                .sevents__text {
+                    font-size: 1.5em;
+                    width: 60%;
+                    padding-left: 20px;
+                }
+                .sevents__img {
+                    width: 40%;
+                    background-color: #ccc;
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+//BILIM CARELER SAHYPA=====================================================================
+
+.bevents {
+    .bevents__inner {
+        padding: 100px 0;
+        .bevents__card {
+            .bevents__title {
+                font-size: 3.5em;
+                margin-bottom: 20px;
+            }
+            .bevents__content {
+                display: flex;
+                padding: 20px;
+                .bevents__text {
+                    display: block;
+                    font-size: 1.5em;
+                    padding-left: 20px;
+                    width: 60%;
+                }
+                .bevents__img {
+                    width: 40%;
+                    background-color: #ccc;
+                    max-height: 400px;
+                }
+            }
+        }
+    }
 }

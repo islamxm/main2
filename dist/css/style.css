@@ -1636,6 +1636,8 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  height: 100%;
+  position: relative;
 }
 
 body {
@@ -1643,9 +1645,32 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #000;
-  position: relative;
   max-width: 100%;
   width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 a {
@@ -2244,7 +2269,7 @@ button {
   height: 170px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background-color: #a18f5b;
+  background-color: #ccc;
   margin-bottom: 20px;
 }
 
@@ -2324,7 +2349,6 @@ button {
 .teachers .teachers__inner .teachers__content .teachers__slider .teachers__slide .teachers__slide_info {
   width: 70%;
   padding: 20px;
-  background-color: #ccc;
   -webkit-border-radius: 10px;
           border-radius: 10px;
 }
@@ -2727,7 +2751,7 @@ button {
 .feedback__btn_wrapper {
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #a18f5b;
   cursor: pointer;
   display: -webkit-box;
@@ -2783,6 +2807,111 @@ button {
 
 .feedback__btn_wrapper:hover::after {
   height: 100%;
+}
+
+.header__nav_burger_menu {
+  display: none;
+}
+
+.mod-header {
+  background-color: #000;
+  position: static !important;
+}
+
+.newscard .newscard__inner {
+  padding: 100px 0;
+}
+
+.newscard .newscard__inner .newscard__title {
+  display: block;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.newscard .newscard__inner .newscard__info .newscard__info_date {
+  color: #ccc;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.newscard .newscard__inner .newscard__content {
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newscard .newscard__inner .newscard__content .newscard__text {
+  display: block;
+  padding-left: 20px;
+  font-size: 1.5em;
+  width: 60%;
+}
+
+.newscard .newscard__inner .newscard__content .newscard__img {
+  width: 40%;
+  background-color: #ccc;
+  max-height: 500px;
+}
+
+.sevents .sevents__inner {
+  padding: 100px 0;
+}
+
+.sevents .sevents__inner .sevents__card .sevents__title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.sevents .sevents__inner .sevents__card .sevents__content {
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sevents .sevents__inner .sevents__card .sevents__content .sevents__text {
+  font-size: 1.5em;
+  width: 60%;
+  padding-left: 20px;
+}
+
+.sevents .sevents__inner .sevents__card .sevents__content .sevents__img {
+  width: 40%;
+  background-color: #ccc;
+  max-height: 400px;
+}
+
+.bevents .bevents__inner {
+  padding: 100px 0;
+}
+
+.bevents .bevents__inner .bevents__card .bevents__title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.bevents .bevents__inner .bevents__card .bevents__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.bevents .bevents__inner .bevents__card .bevents__content .bevents__text {
+  display: block;
+  font-size: 1.5em;
+  padding-left: 20px;
+  width: 60%;
+}
+
+.bevents .bevents__inner .bevents__card .bevents__content .bevents__img {
+  width: 40%;
+  background-color: #ccc;
+  max-height: 400px;
 }
 
 @media (max-width: 1200px) {
@@ -2858,6 +2987,39 @@ button {
 }
 
 @media (max-width: 999px) {
+  .header {
+    position: absolute;
+  }
+
+  .header .header__inner .header__nav {
+    display: none;
+  }
+
+  .header .header__inner .header__nav_burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header .header__inner .header__nav_burger span {
+    display: block;
+    width: 70px;
+    height: 6px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .header .header__inner .header__nav_burger span:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .students .students__inner .students__content {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .students .students__inner .students__content .students__profile {
     max-width: 200px;
     width: 100%;
@@ -2881,67 +3043,6 @@ button {
   .teachers .teachers__inner .teachers__content .teachers__slider .teachers__slide .teachers__slide_img {
     width: 40%;
     min-height: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .header .header__inner .header__nav {
-    display: none;
-  }
-
-  .header .header__inner .header__nav_burger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .header .header__inner .header__nav_burger span {
-    display: block;
-    width: 70px;
-    height: 6px;
-    -webkit-border-radius: 10px;
-            border-radius: 10px;
-    background-color: #fff;
-  }
-
-  .header .header__inner .header__nav_burger span:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  .counter .counter__inner .counter__item {
-    width: 30%;
-  }
-
-  .counter .counter__inner .counter__item .counter__item_circle {
-    height: 150px;
-    width: 150px;
-  }
-
-  .counter .counter__inner .counter__item .counter__item_circle span {
-    font-size: 2.5em;
-  }
-
-  .counter .counter__inner .counter__item .counter__item_title {
-    font-size: 2.5em;
-  }
-
-  .students .students__inner .students__content .students__profile .students__profile_name {
-    font-size: 1.2em;
-  }
-
-  .teachers .teachers__inner .teachers__content .teachers__slider .teachers__slide .teachers__slide_info {
-    width: 50%;
-  }
-
-  .teachers .teachers__inner .teachers__content .teachers__slider .teachers__slide .teachers__slide_img {
-    width: 50%;
-  }
-
-  .teachers .teachers__inner .teachers__content .teachers__slide_prev {
-    display: none;
-  }
-
-  .teachers .teachers__inner .teachers__content .teachers__slide_next {
-    display: none;
   }
 
   .header__nav_burger_menu {
@@ -2992,6 +3093,141 @@ button {
     display: block;
     padding: 20px 0;
     font-size: 1.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .counter .counter__inner .counter__item {
+    width: 30%;
+  }
+
+  .counter .counter__inner .counter__item .counter__item_circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .counter .counter__inner .counter__item .counter__item_circle span {
+    font-size: 2.5em;
+  }
+
+  .counter .counter__inner .counter__item .counter__item_title {
+    font-size: 2.5em;
+  }
+
+  .students .students__inner .students__content .students__profile .students__profile_name {
+    font-size: 1.2em;
+  }
+
+  .teachers .teachers__inner .teachers__content .teachers__slider .teachers__slide .teachers__slide_info {
+    width: 50%;
+  }
+
+  .teachers .teachers__inner .teachers__content .teachers__slider .teachers__slide .teachers__slide_img {
+    width: 50%;
+  }
+
+  .teachers .teachers__inner .teachers__content .teachers__slide_prev {
+    display: none;
+  }
+
+  .teachers .teachers__inner .teachers__content .teachers__slide_next {
+    display: none;
+  }
+
+  .newscard .newscard__inner {
+    padding: 50px 10px;
+  }
+
+  .newscard .newscard__inner .newscard__title {
+    font-size: 3em;
+  }
+
+  .newscard .newscard__inner .newscard__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .newscard .newscard__inner .newscard__content .newscard__text {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  .newscard .newscard__inner .newscard__content .newscard__img {
+    max-height: 350px;
+    min-height: 350px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sevents .sevents__inner {
+    padding: 50px 10px;
+  }
+
+  .sevents .sevents__inner .sevents__card .sevents__title {
+    font-size: 3em;
+  }
+
+  .sevents .sevents__inner .sevents__card .sevents__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .sevents .sevents__inner .sevents__card .sevents__content .sevents__text {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  .sevents .sevents__inner .sevents__card .sevents__content .sevents__img {
+    max-height: 350px;
+    min-height: 350px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bevents .bevents__inner {
+    padding: 50px 10px;
+  }
+
+  .bevents .bevents__inner .bevents__card .bevents__title {
+    font-size: 3em;
+  }
+
+  .bevents .bevents__inner .bevents__card .bevents__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .bevents .bevents__inner .bevents__card .bevents__content .bevents__text {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  .bevents .bevents__inner .bevents__card .bevents__content .bevents__img {
+    max-height: 350px;
+    min-height: 350px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -3071,5 +3307,37 @@ button {
 
   .popup .popup__inner .popup__close_btn {
     top: 5px;
+  }
+}
+
+@media (max-width: 449px) {
+  .students .students__inner .students__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 446px) {
+  .students__title::after {
+    display: none;
+  }
+
+  .news__title::after {
+    display: none;
+  }
+
+  .teachers__title::after {
+    display: none;
+  }
+
+  .about__title::after {
+    display: none;
   }
 }
