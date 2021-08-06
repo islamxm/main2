@@ -4,6 +4,11 @@
     box-sizing: border-box;
 
 }
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,6 +16,8 @@ body {
     font-size: 16px;
     color: #000;
     position: relative; 
+    max-width: 100%;
+    width: 100%;
 }
 
 a {
@@ -44,6 +51,8 @@ button {
 
 .hide_o {
     opacity: 0;
+    z-index: -1;
+    display: flex;
 }
 
 .show {
@@ -51,7 +60,15 @@ button {
 }
 
 .show_o {
-    opacity: 1;
+    opacity: 1 !important;
+    display: flex !important;
+    z-index: 999999999999 !important;
+    // transition: all .3s ease-out !important;
+    overflow-y: hidden;
+}
+
+.show_f {
+    display: flex !important;
 }
 
 

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
-
     <!-- Main CSS ======================================================================================= -->
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -17,17 +16,15 @@
     <title>Document</title>
 </head>
 
-
 <body>
-
 
     <!-- HEADER -->
     <header class="header">
         <div class="header__inner container">
 
-            <div class="header__logo">
-
-            </div>
+            <a href="#" class="header__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="my" d="M256 80c-16.569 0-30-13.431-30-30V30c0-16.569 13.431-30 30-30 16.569 0 30 13.431 30 30v20c0 16.569-13.431 30-30 30zm29.5 296l20-155h30v-80c0-33.137-26.863-61-60-61h-39c-33.137 0-60 27.863-60 61v80h30l20 155" fill="#a18f5b"/><path class="my" d="M286 50V30c0-16.569-13.431-30-30-30v80c16.569 0 30-13.431 30-30zm-10.5 30H256v296h29.5l20-155h30v-80c0-33.137-26.863-61-60-61z" fill="#a18f5b"/><path d="M351 502H161V362h190v140z" fill="#9e7957"/><path d="M351 502h-95V362h95v140z" fill="#936c4c"/><path class="my" d="M201 407h110v30H201zm-75 75h260v30H126z" fill="#a18f5b"/><path d="M256 482h130v30H256zm0-75h55v30h-55z" fill="#a18f5b"/></svg>
+            </a>
 
             <nav class="header__nav">
                 <ul class="header__list">
@@ -55,26 +52,25 @@
             </nav>
 
             <div class="header__nav_burger">
-                <img src="" alt="tm">
-                <!-- arrow icon -->
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            
 
         </div>
     </header>
-
-
-
 
     <!-- Esasy bolum -->
 
     <section class="main">
         <div class="main__inner container">
 
-            <h1 class="main__title">
+            <h1 class="main__title" data-aos="fade-right" data-aos-duration="1000">
                 mekdep72
             </h1>
 
-            <p class="header__subtitle">
+            <p class="header__subtitle" data-aos="fade-left" data-aos-duration="1000">
                 Gurbansoltan eje adyndaky<br>
                 yoriteleshdirilen orta mekdep
             </p>
@@ -82,15 +78,12 @@
         </div>
     </section>
 
-
-
-
     <!-- Habarlar -->
 
     <section class="news">
         <div class="news__inner container">
 
-            <h1 class="news__title">
+            <h1 class="news__title" data-aos="fade-right" data-aos-duration="1000">
                 Habarlar
             </h1>
 
@@ -180,37 +173,34 @@
         </div>
     </section>
 
-
-
-
     <!-- Esasy gorkezijiler bolumi -->
 
     <section class="counter">
         <div class="counter__inner container">
 
             <div class="counter__item">
-                <div class="counter__item_circle">
-                   <span>100</span> 
+                <div class="counter__item_circle" data-aos="flip-up" data-aos-duration="1000">
+                   <span class="counter_elem" >100</span> 
                 </div>
-                <div class="counter__item_title">
+                <div class="counter__item_title" data-aos="fade-up" data-aos-duration="1000">
                     Title
                 </div>
             </div>
 
             <div class="counter__item">
-                <div class="counter__item_circle">
-                   <span>100</span> 
+                <div class="counter__item_circle" data-aos="flip-up" data-aos-duration="1000">
+                   <span class="counter_elem" >100</span> 
                 </div>
-                <div class="counter__item_title">
+                <div class="counter__item_title" data-aos="fade-up" data-aos-duration="1000">
                     Title
                 </div>
             </div>
 
             <div class="counter__item">
-                <div class="counter__item_circle">
-                   <span>100</span> 
+                <div class="counter__item_circle" data-aos="flip-up" data-aos-duration="1000">
+                   <span class="counter_elem" >100</span> 
                 </div>
-                <div class="counter__item_title">
+                <div class="counter__item_title" data-aos="fade-up" data-aos-duration="1000">
                     Title
                 </div>
             </div>
@@ -218,15 +208,12 @@
         </div>
     </section>
 
-
-
-
     <!-- Goreldeli okuwcylar bolumi -->
 
     <section class="students">
         <div class="students__inner container">
 
-            <h1 class="students__title">
+            <h1 class="students__title" data-aos="fade-right" data-aos-duration="1000">
                 Goreldeli
                 okuwcylar
             </h1>
@@ -250,7 +237,7 @@
                         <!-- Surat ucin yer (<img/>) -->
                     </div>
                     <div class="students__profile_name">
-                        Planyev Plany
+                        Annamyradow Babamyrat
                     </div>
                     <div class="students__profile_info">
                         10 'C' synp
@@ -442,25 +429,27 @@
         </div>
     </section>
 
-
-
-
     <!-- Mugallymlar bolumi -->
 
     <section class="teachers">
         <div class="teachers__inner container">
 
-            <h1 class="teachers__title">
+            <h1 class="teachers__title" data-aos="fade-right" data-aos-duration="1000">
                 Mugallymlar
             </h1>
 
             <div class="teachers__content">
 
                 <!-- Slider -->
-                <div class="teachers__slider">
+                <div class="teachers__slider" data-aos="fade-up" data-aos-duration="1000">
 
                     <!-- Slides -->
                     <div class="teachers__slide">
+                        
+                        <div class="teachers__slide_img">
+                            <img src="" alt="mugallym">
+                        </div>
+
                         <div class="teachers__slide_info">
                             <h4 class="teachers__slide_info_title">
                                 Planyev Plany
@@ -472,12 +461,15 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit quidem quae rem sunt atque dolores pariatur enim, sapiente a, praesentium, iste quas similique. Eveniet temporibus rerum repudiandae quia cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta quas dolor cupiditate ratione ullam nesciunt explicabo. Labore eum nobis optio! Ipsam pariatur deleniti ea at quod. Accusantium, commodi pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit quidem quae rem sunt atque dolores pariatur enim, sapiente a, praesentium, iste quas similique. Eveniet temporibus rerum repudiandae quia cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta quas dolor cupiditate ratione ullam nesciunt explicabo. Labore eum nobis optio! Ipsam pariatur deleniti
                             </p> 
                         </div>
-                        <div class="teachers__slide_img">
-                            <img src="" alt="mugallym">
-                        </div>
+
                     </div>
 
                     <div class="teachers__slide">
+                        
+                        <div class="teachers__slide_img">
+                            <img src="" alt="mugallym">
+                        </div>
+
                         <div class="teachers__slide_info">
                             <h4 class="teachers__slide_info_title">
                                 Planyev Plany
@@ -489,12 +481,15 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit quidem quae rem sunt atque dolores pariatur enim, sapiente a, praesentium, iste quas similique. Eveniet temporibus rerum repudiandae quia cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta quas dolor cupiditate ratione ullam nesciunt explicabo. Labore eum nobis optio! Ipsam pariatur deleniti ea at quod. Accusantium, commodi pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit quidem quae rem sunt atque dolores pariatur enim, sapiente a, praesentium, iste quas similique. Eveniet temporibus rerum repudiandae quia cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta quas dolor cupiditate ratione ullam nesciunt explicabo. Labore eum nobis optio! Ipsam pariatur deleniti
                             </p> 
                         </div>
-                        <div class="teachers__slide_img">
-                            <img src="" alt="mugallym">
-                        </div>
+                        
                     </div>
 
                     <div class="teachers__slide">
+                        
+                        <div class="teachers__slide_img">
+                            <img src="" alt="mugallym">
+                        </div>
+
                         <div class="teachers__slide_info">
                             <h4 class="teachers__slide_info_title">
                                 Planyev Plany
@@ -506,12 +501,15 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit quidem quae rem sunt atque dolores pariatur enim, sapiente a, praesentium, iste quas similique. Eveniet temporibus rerum repudiandae quia cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta quas dolor cupiditate ratione ullam nesciunt explicabo. Labore eum nobis optio! Ipsam pariatur deleniti ea at quod. Accusantium, commodi pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit quidem quae rem sunt atque dolores pariatur enim, sapiente a, praesentium, iste quas similique. Eveniet temporibus rerum repudiandae quia cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta quas dolor cupiditate ratione ullam nesciunt explicabo. Labore eum nobis optio! Ipsam pariatur deleniti
                             </p> 
                         </div>
-                        <div class="teachers__slide_img">
-                            <img src="" alt="mugallym">
-                        </div>
+                        
                     </div>
 
                     <div class="teachers__slide">
+                        
+                        <div class="teachers__slide_img">
+                            <img src="" alt="mugallym">
+                        </div>
+
                         <div class="teachers__slide_info">
                             <h4 class="teachers__slide_info_title">
                                 Planyev Plany
@@ -523,10 +521,10 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit quidem quae rem sunt atque dolores pariatur enim, sapiente a, praesentium, iste quas similique. Eveniet temporibus rerum repudiandae quia cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta quas dolor cupiditate ratione ullam nesciunt explicabo. Labore eum nobis optio! Ipsam pariatur deleniti ea at quod. Accusantium, commodi pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit quidem quae rem sunt atque dolores pariatur enim, sapiente a, praesentium, iste quas similique. Eveniet temporibus rerum repudiandae quia cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta quas dolor cupiditate ratione ullam nesciunt explicabo. Labore eum nobis optio! Ipsam pariatur deleniti
                             </p> 
                         </div>
-                        <div class="teachers__slide_img">
-                            <img src="" alt="mugallym">
-                        </div>
+                        
                     </div>
+
+                    
 
                 </div>
                 <!-- Pagination -->
@@ -548,17 +546,14 @@
         </div>
     </section>
 
-
-
-
     <!-- Biz barada section -->
 
     <section class="about">
         <div class="about__inner container">
-            <h2 class="about__title">
+            <h2 class="about__title" data-aos="fade-right" data-aos-duration="1000">
                 Biz barada
             </h2>
-            <p class="about__text">
+            <p class="about__text" data-aos="fade-up" data-aos-duration="1000">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta sint impedit saepe iusto distinctio at, autem amet dicta praesentium, facere architecto laboriosam error nihil animi numquam ducimus recusandae rerum?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta sint impedit saepe iusto distinctio at, autem amet dicta praesentium, facere architecto laboriosam error nihil animi numquam ducimus recusandae rerum?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta sint impedit saepe iusto distinctio at, autem amet dicta praesentium, facere architecto laboriosam error nihil animi numquam ducimus recusandae rerum?
@@ -569,11 +564,6 @@
             </p>
         </div>
     </section>
-
-
-
-
-
 
     <!-- FOOTER -->
 
@@ -615,7 +605,7 @@
                 </ul>
     
                 <div class="footer__logo">
-                    <!-- <img src="" alt="logotype"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="my" d="M256 80c-16.569 0-30-13.431-30-30V30c0-16.569 13.431-30 30-30 16.569 0 30 13.431 30 30v20c0 16.569-13.431 30-30 30zm29.5 296l20-155h30v-80c0-33.137-26.863-61-60-61h-39c-33.137 0-60 27.863-60 61v80h30l20 155" fill="#a18f5b"/><path class="my" d="M286 50V30c0-16.569-13.431-30-30-30v80c16.569 0 30-13.431 30-30zm-10.5 30H256v296h29.5l20-155h30v-80c0-33.137-26.863-61-60-61z" fill="#a18f5b"/><path d="M351 502H161V362h190v140z" fill="#9e7957"/><path d="M351 502h-95V362h95v140z" fill="#936c4c"/><path class="my" d="M201 407h110v30H201zm-75 75h260v30H126z" fill="#a18f5b"/><path d="M256 482h130v30H256zm0-75h55v30h-55z" fill="#a18f5b"/></svg>
                 </div>
     
                 <div class="footer__contacts">
@@ -649,6 +639,8 @@
 
 
 
+
+
     <!-- POPUP -->
     <div class="popup">
         <div class="popup__inner">
@@ -658,12 +650,12 @@
                     <input class="popup__name" type="text" name="name">
                 </label>
                 <label> Telefon nomerin
-                    <input class="popup__num" type="tel" name="phoneNumber">
+                    <input class="popup__num" type="tel" name="phone">
                 </label>
                 <label>
                     <textarea class="popup__text" name="text"></textarea>
                 </label>
-                <input class="popup__btn" type="submit" value="Ugrat"></button>
+                <button class="popup__btn" type="submit"><span>Ugrat</span></button>
             </form>
 
             <div class="popup__close_btn">
@@ -672,6 +664,41 @@
         </div>
     </div>
 
+
+    <!-- POPUP BUTTON -->
+    <div class="feedback__btn">
+        <div class="feedback__btn_wrapper">
+            <svg height="682pt" viewBox="-21 -47 682.667 682" width="682pt" xmlns="http://www.w3.org/2000/svg"><path d="M552.012-1.332H87.988C39.473-1.332 0 38.133 0 86.656V370.63c0 48.414 39.3 87.816 87.676 87.988V587.48l185.191-128.863h279.145c48.515 0 87.988-39.472 87.988-87.988V86.656c0-48.523-39.473-87.988-87.988-87.988zm50.488 371.96c0 27.837-22.648 50.49-50.488 50.49h-290.91l-135.926 94.585v-94.586H87.988c-27.84 0-50.488-22.652-50.488-50.488V86.656c0-27.843 22.648-50.488 50.488-50.488h464.024c27.84 0 50.488 22.645 50.488 50.488zm0 0"/><path d="M171.293 131.172h297.414v37.5H171.293zm0 80h297.414v37.5H171.293zm0 80h297.414v37.5H171.293zm0 0"/></svg>
+        </div>
+    </div>
+
+    <!-- BURGER MENU -->
+    <div class="header__nav_burger_menu">
+        <div class="burger_close">
+            <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="M256 512C114.84 512 0 397.16 0 256S114.84 0 256 0s256 114.84 256 256-114.84 256-256 256zm0-475.43C135.008 36.57 36.57 135.008 36.57 256S135.008 475.43 256 475.43 475.43 376.992 475.43 256 376.992 36.57 256 36.57zm0 0"/><path d="M347.43 365.715c-4.68 0-9.36-1.785-12.93-5.36L151.645 177.5c-7.145-7.145-7.145-18.715 0-25.855 7.14-7.141 18.714-7.145 25.855 0L360.355 334.5c7.145 7.145 7.145 18.715 0 25.855a18.207 18.207 0 01-12.925 5.36zm0 0"/><path d="M164.57 365.715c-4.68 0-9.355-1.785-12.925-5.36-7.145-7.14-7.145-18.714 0-25.855L334.5 151.645c7.145-7.145 18.715-7.145 25.855 0 7.141 7.14 7.145 18.714 0 25.855L177.5 360.355a18.216 18.216 0 01-12.93 5.36zm0 0"/></svg>
+        </div>
+
+        <ul class="burger__menu_list">
+            <li class="burger__menu_item">
+                <a href="#" class="burger__menu_link">Habarlar</a>
+            </li>
+            <li class="burger__menu_item">
+                <a href="#" class="burger__menu_link">Sport careleri</a>
+            </li>
+            <li class="burger__menu_item">
+                <a href="#" class="burger__menu_link">Bilim careleri</a>
+            </li>
+            <li class="burger__menu_item">
+                <a href="#" class="burger__menu_link">Okuwcylar</a>
+            </li>
+            <li class="burger__menu_item">
+                <a href="#" class="burger__menu_link">Mugallymlar</a>
+            </li>
+            <li class="burger__menu_item">
+                <a href="#" class="burger__menu_link">Biz barada</a>
+            </li>
+        </ul>
+    </div>
 
 
 
@@ -683,6 +710,8 @@
     <script src="js/jquery.spincrement.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
 
 
 
